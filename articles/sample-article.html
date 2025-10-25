@@ -3,45 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Article - Threat Hunting Portfolio</title>
+    <title>Sample Threat Hunt - 0x40810000</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1>Sample Threat Hunting Article</h1>
-        <p><a href="../index.html" style="color: white;">← Back to Home</a></p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Threat Hunt Report</h1>
+            <p><a href="../index.html">← RETURN_TO_BASE</a></p>
+        </header>
 
-    <main>
-        <article>
-            <p class="date">October 24, 2025</p>
-            
-            <h2>Executive Summary</h2>
-            <p>This is where you'd write a brief overview of what you discovered.</p>
+        <main>
+            <article>
+                <h2>Sample Threat Hunt</h2>
+                <p class="date">2025.10.24</p>
+                
+                <h2>Executive Summary</h2>
+                <p>Brief overview of the threat hunt objective, key findings, and impact. Keep this scannable - decision makers read this section first.</p>
 
-            <h2>Initial Detection</h2>
-            <p>Describe how you first noticed the suspicious activity...</p>
+                <h2>Initial Detection</h2>
+                <p>Describe the trigger for this investigation. What alerted you? Which tools or techniques identified the suspicious activity?</p>
+                <pre><code>// Example detection query or alert
+SELECT * FROM processes 
+WHERE name LIKE '%suspicious%' 
+AND network_connections > 10;</code></pre>
 
-            <h2>Analysis</h2>
-            <p>Detail your investigation process, tools used, and findings...</p>
+                <h2>Analysis & Investigation</h2>
+                <p>Walk through your investigation methodology. What did you analyze? What tools did you use?</p>
+                <ul>
+                    <li>Timeline analysis of events</li>
+                    <li>Network traffic examination</li>
+                    <li>Memory forensics results</li>
+                    <li>Related IOCs discovered</li>
+                </ul>
 
-            <h2>Indicators of Compromise (IOCs)</h2>
-            <ul>
-                <li>IP Address: 192.168.1.100</li>
-                <li>File Hash: abc123def456...</li>
-                <li>Domain: malicious-example.com</li>
-            </ul>
+                <h2>Indicators of Compromise</h2>
+                <pre><code>IP: 192.168.100.50
+Domain: malicious-c2.example.com
+Hash: a1b2c3d4e5f6...
+Registry Key: HKLM\Software\Malware\Persistence</code></pre>
 
-            <h2>Mitigation</h2>
-            <p>Describe the steps taken to remediate the threat...</p>
+                <h2>Mitigation & Response</h2>
+                <p>Detail the remediation steps taken and defensive measures implemented.</p>
 
-            <h2>Conclusion</h2>
-            <p>Wrap up your findings and lessons learned...</p>
-        </article>
-    </main>
+                <h2>Lessons Learned</h2>
+                <p>What did this hunt teach you? What detection gaps were identified? What worked well?</p>
+            </article>
+        </main>
 
-    <footer>
-        <p>© 2025 0x40810000 | <a href="https://github.com/0x40810000">GitHub</a></p>
-    </footer>
+        <footer>
+            <p>© 2025 0x40810000 | <a href="https://github.com/0x40810000" target="_blank">GITHUB</a></p>
+        </footer>
+    </div>
 </body>
 </html>
